@@ -1,7 +1,7 @@
-package ${PROJECT}
+package bus
 
 import (
-	"${MODULE}/internal/database"
+	"github.com/Apolisk/bus/internal/database"
 )
 
 type Bootstrap struct {

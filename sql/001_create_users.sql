@@ -1,7 +1,11 @@
 -- +goose Up
 
-create table users (
-    created_at  timestamptz not null default now(),
-    updated_at  timestamptz not null default now(),
-    id          bigint      primary key
+IF NOT EXISTS create table users (
+    id          bigint      primary key,
+    firstname    varchar(64),
+    created_at  timestamp
 );
+
+-- +goose Down
+
+drop table users;

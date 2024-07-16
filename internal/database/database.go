@@ -3,7 +3,7 @@ package database
 import (
 	"database/sql"
 
-	_ "${SQL_DRIVER}"
+	_ "github.com/lib/pq"
 )
 
 type DB struct {
@@ -11,7 +11,7 @@ type DB struct {
 }
 
 func Open(url string) (*DB, error) {
-	db, err := sql.Open("${SQL_DIALECT}", url)
+	db, err := sql.Open("postgres", url)
 	if err != nil {
 		return nil, err
 	}

@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  bot:
+    build: .
+    env_file: ".env"
+    depends_on:
+      - postgres
+    environment:
+      DB_URL: "host=postgres user=postgres password=postgres database=bus sslmode=disable"
+    ports:
+      - "8080:8080"
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: bus
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"

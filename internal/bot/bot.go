@@ -1,8 +1,8 @@
 package bot
 
 import (
-	"${MODULE}"
-	"${MODULE}/internal/database"
+	"github.com/Apolisk/bus"
+	"github.com/Apolisk/bus/internal/database"
 
 	tele "gopkg.in/telebot.v3"
 	"gopkg.in/telebot.v3/layout"
@@ -15,7 +15,7 @@ type Bot struct {
 	db *database.DB
 }
 
-func New(path string, boot ${PROJECT}.Bootstrap) (*Bot, error) {
+func New(path string, boot bus.Bootstrap) (*Bot, error) {
 	lt, err := layout.New(path)
 	if err != nil {
 		return nil, err
@@ -43,10 +43,10 @@ func (b *Bot) Start() {
 	// Middlewares
 	b.Use(middleware.Logger())
 	b.Use(middleware.AutoRespond())
-	b.Use(b.Middleware("ru"))
+	b.Use(b.Middleware("en"))
 
 	// Handlers
 	b.Handle("/start", b.onStart)
-
+	b.Handle(tele.OnQuery, b.onQuery)
 	b.Bot.Start()
 }
