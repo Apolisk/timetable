@@ -8,6 +8,7 @@ A 33-second video demonstration of the bot is available, showcasing the key feat
 - The bot's response to user commands and inputs.
 - The user interface elements and how they aid in managing schedules.
 
+![](https://github.com/Apolisk/timetable/blob/main/dem.gif)
 
 ![Alt Text](https://d1ou7tyrllirxp.cloudfront.net/b7hb3k%2Fpreview%2F59723981%2Fmain_large.gif?response-content-disposition=inline%3Bfilename%3D%22main_large.gif%22%3B&response-content-type=image%2Fgif&Expires=1722331375&Signature=dASl7FMDqonGlUzsOFR~tMaRR2Ya4xNBwcxZnroZVkHf3C90fVidV2VkpK1bYldc2GDbeO0hkOM-CWTj8l5SUZi0A2jGL0vbmfj~jiDYVsal~lnrgi1mZOPkbeXZcG8fbgCj~tFkTG1btMT5PkqHB3NbEDBif5J9pGfpsdTqgnhe7aSEOnU0LDmiyEsX8pKrtqXmf3JI~IlrrwBbEkAWVsyWPVN9SLoAOmkoWUoWuH6F-nqQdE6oBjjM42WpighWy5XEUOV875IVR0GrOsuUCk3MDpNV~mlfYRbtHvg1V-589D6pfbscdni5-hrtOBRnPEzgIuG7M3EKa8qqdHaPRQ__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ)
 
